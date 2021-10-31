@@ -12,10 +12,11 @@ class _StudentsState extends State<Students> {
 
   Widget build(BuildContext context) {
     return DefaultTabController(
-      initialIndex: 1,
+      initialIndex: 0,
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          toolbarHeight: 36.0,
           title: Container(
             child: Row(
               children: [
@@ -27,6 +28,9 @@ class _StudentsState extends State<Students> {
                   isAntiAlias: true,
                   fit: BoxFit.scaleDown,
                 ),
+
+
+
                 IconButton(
                     onPressed: (){
                       debugPrint("hw!");
